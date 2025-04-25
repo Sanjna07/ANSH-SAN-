@@ -31,12 +31,13 @@ export default function ProjectPurna() {
     let currentIndex = 0;
     let isDeleting = false;
     let timeoutId: NodeJS.Timeout;
-
+  
     const typeText = () => {
       if (isDeleting) {
         setText(prev => prev.slice(0, -1));
         if (text.length === 0) {
           isDeleting = false;
+          currentIndex = 0;
           timeoutId = setTimeout(typeText, 1000);
           return;
         }
@@ -49,12 +50,12 @@ export default function ProjectPurna() {
           return;
         }
       }
-      timeoutId = setTimeout(typeText, isDeleting ? 50 : 150);
+      timeoutId = setTimeout(typeText, isDeleting ? 50 : 100);
     };
-
+  
     timeoutId = setTimeout(typeText, 500);
     return () => clearTimeout(timeoutId);
-  }, [text, fullText]);
+  }, [fullText]);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -127,7 +128,7 @@ export default function ProjectPurna() {
         {/* Main Hero Content - Improved for mobile */}
         <div className={`flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-8 h-[85vh] sm:min-h-[80vh] pt-12 pb-4 sm:pt-20 md:pt-24 md:pb-16 transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h1 className="text-xl sm:text-3xl md:text-5xl lg:text-6xl text-white font-dark mb-2 sm:mb-4 md:mb-6 tracking-wider sm:tracking-widest uppercase font-serif transition-all duration-700 leading-relaxed">
-            <span className="inline-block border-r-2 border-white animate-pulse">
+            <span className="inline-block border-r-2 border-white">
               {text}
             </span>
           </h1>
