@@ -1,0 +1,37 @@
+{
+  "teamMembers": [
+    {
+      "id": 1,
+      "name": "Anshul bhathija",
+      "role": "Full Stack Developer",
+      "image": "https://res.cloudinary.com/dejquvzim/image/upload/v1745565052/dsohsgrorxomk0aphi3r.jpg",
+      "linkedin": "https://www.linkedin.com/in/anshul-bhathija-8229b0301/",
+      "description": "Expert in building complex website in an couple of times"
+    },
+    {
+      "id": 2,
+      "name": "Sanjana Kumari",
+      "role": "Frontend Developer",
+      "image": "https://res.cloudinary.com/dejquvzim/image/upload/v1745565751/ojeld9eej2yfybykqmg4.jpg",
+      "linkedin": "https://www.linkedin.com/in/sanjana-kumari-107622315/",
+      "description": "Expert in building responsive and interactive websites"
+    },
+    {
+      "id": 3,
+      "name": "Aviral srivastava",
+      "role": "Backend Developer",
+      "image": "https://res.cloudinary.com/dejquvzim/image/upload/v1745565211/yqnp4jmwdoighvoqvsty.jpg",
+      "linkedin": "https://www.linkedin.com/in/aviral-professional/",
+      "description": "Expert in building RESTful APIs and managing databases"
+    },
+    {
+      "id": 4,
+      "name": "Nemichand Jangir",
+      "role": "Researcher",
+      "image": "https://res.cloudinary.com/dejquvzim/image/upload/v1745566383/kcbdmrxuj5tau04om3zj.jpg",
+      "linkedin": "https://www.linkedin.com/in/nemichand-jangir-942a77325/",
+      "description": "A passionate and innovative researcher dedicated to advancing knowledge and solving real-world problems through critical thinking and data-driven insights."
+    }
+    
+  ]
+}

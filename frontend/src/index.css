@@ -1,0 +1,14 @@
+/* Add this at the top of your file */
+html {
+  scroll-behavior: smooth;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate-fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 0.7s ease-in-out;
+}
